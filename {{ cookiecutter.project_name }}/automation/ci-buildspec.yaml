@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: { { cookiecutter.python_version } }
+  build:
+    commands:
+      - pip install -r requirements-test.txt
+      - flake8 src
+      - mypy src
+      - black src --check
+      - pytest tests/unit
+      - STACK_NAME_PREFIX={{ cookiecutter.project_name }}-ci pytest tests/integration

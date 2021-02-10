@@ -1,0 +1,6 @@
+pytest
+pytest-timeout
+flake8
+mypy
+black
+requests

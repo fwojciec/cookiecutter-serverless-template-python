@@ -1,0 +1,6 @@
+{
+  "project_name": "serverless",
+  "python_version": "3.8",
+  "github_username": "fwojciec",
+  "description": "Basic serverless Python project template."
+}
